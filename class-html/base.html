@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Just another normal html file</title>
+    <title>Hola, {your name} !</title>
   </head>
   <body>
-    <h1>HELLO WORLD!</h1>
-    <hr>
-    <form>
-      Your name : <br>
-      <input type="text" name="name" value="">
-      <input type="submit" value="submit">
-    </form>
+    <div>
+      <h1 id="hello">Hola mundo!</h1>
+      <hr>
+      <input type="text" id="name" placeholder="Your name. . . ">
+      <button onclick="helloName()">Say Hello!</button>
+    </div>
   </body>
+  <script>
+    function helloName() {
+      let name = document.getElementById("name").value;
+      let newHello = "Hola, " + name + "!";
+      document.getElementById("hello").innerHTML = newHello;
+      document.title = newHello;
+    }
+  </script>
 </html>
