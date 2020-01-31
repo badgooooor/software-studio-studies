@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Title & Meta-data -->
     <title>Hola, {your name} !</title>
+    <meta charset="utf-8">
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="helloName.js"></script>
   </head>
   <body>
     <div>
@@ -11,12 +16,4 @@
       <button onclick="helloName()">Say Hello!</button>
     </div>
   </body>
-  <script>
-    function helloName() {
-      let name = document.getElementById("name").value;
-      let newHello = "Hola, " + name + "!";
-      document.getElementById("hello").innerHTML = newHello;
-      document.title = newHello;
-    }
-  </script>
 </html>
