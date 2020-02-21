@@ -1,0 +1,25 @@
+body {
+  background-color: #78C8FB;
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+.card {
+  position: fixed;
+  width: 600px;
+  bottom: 0;
+  right: 0;
+}
+
+.card > img {
+  width: 600px;
+  height: 600px;
+}
+
+.card-content {
+  position: absolute;
+  top: 440px;
+  background-color: #fefefe;
+  opacity: 0.6;
+  text-align: center;
+}
